@@ -8,7 +8,7 @@ class Map extends React.Component{
     var lat = parseFloat(this.props.lat);
     var lng = parseFloat(this.props.lon);
     var myPosition = new google.maps.LatLng(lat, lng);
-    var mapDiv = document.getElementById('map');
+    //var mapDiv = document.getElementById('map');
     var mapOptions = {
       center: myPosition,
       zoom: 8
@@ -20,7 +20,9 @@ class Map extends React.Component{
     this.initialize();
   }
   render() {
+    
     return <div className="map"/>
+    
   }
 }
 //ReactDOM.render(<Map lat={-34.397} lon={150.644} />, document.getElementById('map'));
