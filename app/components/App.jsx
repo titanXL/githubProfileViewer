@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import Profile from './github/Profile.jsx';
 import Search from './github/Search.jsx';
-
+import Map from './github/Map.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -64,6 +64,7 @@ class App extends React.Component {
       <div>
         <Search onFormSubmit={this.handleFormSubmit.bind(this) }/>
         <Profile {... this.state}  />
+        <Map lat={-34.397} lon={150.644} />
       </div>
     )
   }
